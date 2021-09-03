@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- modal start -->
+    <div class="modal hidden">
+        <div class="modalContent">
+            <h2>Read this before proceeding.</h2>
+            <ol>
+                <li>We are completely transparent and will always be.</li>
+                <li>All the Donations will be used only for a better cause and will not be wasted.</li>
+                <li>We, at "The Sparks Foundation" will not use the money received by donations for     our personal use.</li>
+                <li>We will send the details of, how the donations are utilised, at the end of  every month to all the donors.</li>
+            </ol>
+            <form>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HsrrpCs0iR6qZh" async></script>
+            </form>
+        </div>
+        <button class="closeButton">&times;</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- modal end -->
+
+
+    <nav>
+        <div class="left">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+            </a>
+            <h1 class="logoTitle">
+                <a href="https://www.thesparksfoundationsingapore.org/">The Sparks Foundation</a></h1>
+        </div>
+
+        <div class="right">
+            <ul class="navLinks">
+                <li class="navLink"><a href="index.html">Home</a></li>
+                <li class="navLink"><a href="https://www.thesparksfoundationsingapore.org/about/vision-mission-and-values/">About</a></li>
+                <li class="navLink"><a href="https://www.thesparksfoundationsingapore.org/about/executive-team/">Team</a></li>
+                <li class="navLink"><a href="https://www.thesparksfoundationsingapore.org/contact-us/">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Giving is the <br>greatest act of Grace.</h1>
+        <p>Small Actions X Lots of People = BIG CHANGE</p>
+        <button class="donateButton">Donate Now.</button>
+    </div>
+    
+</body>
+</html>
