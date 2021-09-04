@@ -5,10 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Login Integration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a8af94606.js" crossorigin="anonymous"></script>
     <script  defer src="script.js"></script>
 </head>
 <body>
-    
+    <!-- <div class="blue"></div> -->
+    <div class="container">
+        <div class="first">
+            <div class="top topSignUpText">
+                <h3 class="topTitle">New here?</h3>
+                <p class="topText">New to our website? What are you thinking? Sign up and Join us now!!!</p>
+                <button class="btn topButtonSignUp">Sign Up</button>
+            </div>
+
+            <div class="bottom bottomSignUpImage">
+                <img src="images/rocket.svg" alt="">
+            </div>
+
+            <div class="top topLoginText">
+                <h3 class="topTitle">One of us?</h3>
+                <p class="topText">Already had and account on our website? Why wasting time? Just login now!!!</p>
+                <button class="btn topButtonLogin">Log In</button>
+            </div>
+
+            <div class="bottom bottomLoginImage">
+                <img src="images/desk.svg" alt="">
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="signInSection">
+                <h1 class="title">Sign In</h1>
+                <form class="signInForm">
+                    <div class="inputSection">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" class="inputFeild">
+                    </div>
+                    <div class="inputSection">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="password" class="inputFeild">
+                    </div>
+                    <button class="btn loginButton">Login</button>
+                </form>
+                <p class="socialText">Or Sign In with social platforms.</p>
+                <div class="socialIcons">
+                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fab fa-google"></i></i></div>
+                    <div class="icon"><i class="fab fa-twitter"></i></div>
+                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                </div>
+            </div>
+            <!-- sign up section -->
+            <div class="signUpSection hidden">
+                <h1 class="title">Sign Up</h1>
+                <form class="signUpForm">
+                    <div class="inputSection">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" class="inputFeild">
+                    </div>
+                    <div class="inputSection">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="inputFeild">
+                    </div>
+                    <div class="inputSection">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" class="inputFeild">
+                    </div>
+                    <button class="btn loginButton">Sign Up</button>
+                </form>
+                <p class="socialText">Or Sign Up with social platforms.</p>
+                <div class="socialIcons">
+                    <div class="icon" title="Disabled"><i class="fab fa-facebook-f"></i></div>
+                    <div class="icon" title="Disabled"><i class="fab fa-google"></i></i></div>
+                    <div class="icon" title="Disabled"><i class="fab fa-twitter"></i></div>
+                    <div class="icon" title="Disabled"><i class="fab fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
