@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- <div class="blue"></div> -->
-    <div class="container">
+    <div class="container hidden">
         <div class="first">
             <div class="top topSignUpText">
                 <h3 class="topTitle">New here?</h3>
@@ -53,10 +53,10 @@
                 </form>
                 <p class="socialText">Or Sign In with social platforms.</p>
                 <div class="socialIcons">
-                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="icon"><i class="fab fa-google"></i></i></div>
-                    <div class="icon"><i class="fab fa-twitter"></i></div>
-                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                    <button class="icon facebookSignin"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon googleSignin"><i class="fab fa-google"></i></i></button>
+                    <button class="icon twitterSignin"><i class="fab fa-twitter"></i></button>
+                    <button class="icon linkedinSignin"><i class="fab fa-linkedin-in"></i></button>
                 </div>
             </div>
             <!-- sign up section -->
@@ -79,13 +79,49 @@
                 </form>
                 <p class="socialText">Or Sign Up with social platforms.</p>
                 <div class="socialIcons">
-                    <div class="icon" title="Disabled"><i class="fab fa-facebook-f"></i></div>
-                    <div class="icon" title="Disabled"><i class="fab fa-google"></i></i></div>
-                    <div class="icon" title="Disabled"><i class="fab fa-twitter"></i></div>
-                    <div class="icon" title="Disabled"><i class="fab fa-linkedin-in"></i></div>
+                    <button class="icon facebook"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon google"><i class="fab fa-google"></i></i></button>
+                    <button class="icon twitter"><i class="fab fa-twitter"></i></button>
+                    <button class="icon linkedin"><i class="fab fa-linkedin-in"></i></button>
                 </div>
             </div>
         </div>
+        <!-- <button class="btn logoutButton">Logout</button> -->
     </div>
+
+    <!-- Profile -->
+    <div class="box hidden">
+        <img src="" alt="User image" id="profilePic">
+        <h1 class="name" id="displayName"></h1>
+        <h3 id="displayThanks">Thanks for joining our club!</h3>
+        <p id="displayText"></p>
+        <button class="btn logoutButton">Logout</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <!-- firebase -->
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDsToLjFedrODnQ_mSlLCUqsrVFDAUlCQU",
+          authDomain: "socialsigninintegration.firebaseapp.com",
+          projectId: "socialsigninintegration",
+          storageBucket: "socialsigninintegration.appspot.com",
+          messagingSenderId: "197742187019",
+          appId: "1:197742187019:web:d8ae4f6b0ba7b25fa32d0e"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script> -->
 </body>
 </html>
+
+<!-- https://lh3.googleusercontent.com/a-/AOh14GjyuqbDUBnHUDZMGQI3Dn5i5Cuo9LD1v8Lv4HNJXcM=s96-c -->
+<!-- Hello, Usha Kiran. -->
+<!-- Thanks for joining our club! -->
+<!-- You should use you registered mail (ushakiranmelasthri@gmail.com) for all of our services. -->
