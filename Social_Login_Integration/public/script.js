@@ -32,7 +32,7 @@ topButtonLogin.addEventListener('click', function(){
 const facebookSignin = document.querySelector('.facebookSignin');
 const googleSignin = document.querySelector('.googleSignin');
 const twitterSignin = document.querySelector('.twitterSignin');
-const linkedinSignin = document.querySelector('.linkedinSignin');
+const githubSignin = document.querySelector('.githubSignin');
 const logoutButton = document.querySelector('.logoutButton');
 
 //firebase
@@ -69,6 +69,31 @@ googleSignin.addEventListener('click', function(){
 
 facebookSignin.addEventListener('click', function(){
     let provider = new firebase.auth.FacebookAuthProvider();
+
+    firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+})
+
+twitterSignin.addEventListener('click', function(){
+    console.log("twitter.....");
+    let provider = new firebase.auth.TwitterAuthProvider();
+
+    firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+        console.log(result)
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+})
+
+githubSignin.addEventListener('click', function(){
+    let provider = new firebase.auth.GithubAuthProvider();
 
     firebase.auth().signInWithPopup(provider)
     .then((result) => {
