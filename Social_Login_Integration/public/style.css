@@ -198,3 +198,59 @@ body{
     height: 80px;
     border-radius: 50%;
 }
+.box{
+    text-align: center;
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+    }
+    .container::before{
+        width: 1100px;
+        height: 1000px;
+    }
+    .container .first, .container .second{
+        width: 100%;
+        height: 50vh;
+    }
+    .top{
+        text-align: left;
+        padding-left: 30px;
+    }
+    .topText{
+        padding: 0 100px 0 0;
+        margin: 20px 0;
+    }
+    .first .bottom img{
+        transform: scale(0.4) translate(-75%, -66%);
+    }
+    .signInSection{
+        position: absolute;
+       right: 10%;
+    }
+    .topLoginText, .bottomLoginImage{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .container::before{
+        width: 650px;
+        height: 650px;
+        transform: translate(0%, -50%)
+    }
+    .top{
+        text-align: center;
+        padding-left: 30px;
+    }
+    .topText{
+        padding: 0;
+        margin: 20px 0;
+    }
+    .signInSection{
+        position: absolute;
+        right: 10%;
+        bottom: 3%;
+    }
+}

@@ -2,6 +2,18 @@ const topButtonSignUp = document.querySelector('.topButtonSignUp');
 const topButtonLogin = document.querySelector('.topButtonLogin');
 const container = document.querySelector('.container');
 
+//disable signup button on small screens
+if(window.screen.availWidth<1250){
+    document.querySelector('.topButtonSignUp').disabled = 'true'
+}
+
+window.addEventListener('resize', function(e){
+    // console.log(e.currentTarget.screen.availWidth);
+    if(e.currentTarget.screen.availWidth<1250){
+        document.querySelector('.topButtonSignUp').disabled = 'true';
+    }
+})
+
 topButtonSignUp.addEventListener('click', function(){
     container.classList.add('active');
     document.querySelector('.signInSection').classList.add('hidden');
@@ -97,7 +109,7 @@ githubSignin.addEventListener('click', function(){
 
     firebase.auth().signInWithPopup(provider)
     .then((result) => {
-        console.log(result);
+        // console.log(result);
     })
     .catch((error) => {
         console.log(error);
@@ -106,8 +118,8 @@ githubSignin.addEventListener('click', function(){
 
 auth.onAuthStateChanged(function(user){
     if(user){
-        console.log('-------------');
-        console.log(user);
+        // console.log('-------------');
+        // console.log(user);
         document.querySelector('.box').style.display = '';
         document.getElementById('profilePic').src = `${user.photoURL}`;
         document.getElementById('displayName').innerHTML = `Hello, ${user.displayName}`;
@@ -115,11 +127,11 @@ auth.onAuthStateChanged(function(user){
         document.getElementById('displayText').innerHTML = `You should use you registered mail (${email}) for all of our services.`;
         document.querySelector('.container').style.display = 'none';
         document.addEventListener('click', function(e){
-            console.log(e.target);
-            console.log('hhhhhhhhh');
+            // console.log(e.target);
+            // console.log('hhhhhhhhh');
 
             if(e.target.closest('.logoutButton')){
-                console.log('yayaya');
+                // console.log('yayaya');
                 auth.signOut();
             }
         })
