@@ -20,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 3%;
 }
 nav .left{
     display: flex;
@@ -134,4 +134,23 @@ nav .right .navLink a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:830px){
+    nav .right{
+        display: none;
+    }
+    .main h1{
+        font-size: 45px;
+    }
+}
+@media (max-width:550px){
+    .main h1{
+        font-size: 30px;
+    }
+    .main p{
+        font-size: 12px;
+    }
+    .main .donateButton{
+        padding: 8px 18px;
+    }
 }
