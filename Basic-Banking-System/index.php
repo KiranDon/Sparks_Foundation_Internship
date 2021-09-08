@@ -15,8 +15,8 @@
         <div class="left">
             <h1>Your <span>Perfect</span> Banking <span>Partner</span>.</h1>
             <p>A simpler banking experience for a simpler life.</p>
-            <button><a href="customers.php">View Customers</a></button>
-            <button><a href="transactions.php">Transactions</a></button>
+            <button><a href="customers.php">View Customers &boxbox;</a></button>
+            <button><a href="transactions.php">Transactions &UpArrowDownArrow;</a></button>
         </div>
 
         <div class="right">

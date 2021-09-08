@@ -115,3 +115,54 @@ footer a{
     font-size: 20px;
     font-weight: bold;
 }
+
+/* tables properties */
+table, th, td{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+}
+th{
+    background-color: white;
+    padding: 5px;
+}
+td{
+    padding: 6px;
+}
+tr:nth-child(even){
+    background-color: rgb(224, 223, 223);
+}
+tr:hover{
+    background-color: rgb(204, 204, 204);  
+}
+table button{
+    padding: 5px 25px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #B1E48D, #78C9A4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* customers */
+.customers{
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    /* border: 8px solid rgb(221, 43, 43); */
+}
+.customers::-webkit-scrollbar {
+    display: none;
+  }
+.customers table{
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
