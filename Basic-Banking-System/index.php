@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Banking System | Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <?php include("header.php") ?>

@@ -134,7 +134,7 @@ tr:nth-child(even){
 tr:hover{
     background-color: rgb(204, 204, 204);  
 }
-table button{
+.button{
     padding: 5px 25px;
     border: none;
     outline: none;
@@ -147,6 +147,9 @@ table button{
 .center{
     text-align: center;
     margin: 5px 0;
+}
+span{
+    font-size: 15px;
 }
 
 /* customers */
@@ -165,4 +168,93 @@ table button{
     width: 100%;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* profile */
+.profile{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile img{
+    width: 100px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.profile .row{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile td{
+    padding: 10px;
+}
+.profile table{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.profile .button, .transfer button{
+    padding: 10px 30px;
+    margin: 20px 100px;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.profile .button:hover{
+    background: linear-gradient(45deg, #78C9A4, #B1E48D);
+}
+
+.profile form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+
+}
+.profile form .row{
+    margin: 10px 0;
+}
+.profile form input[type="text"]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-size: 16px;
+}
+.profile form select{
+    background-color: transparent;
+    font-size: 16px;
+}
+
+/* response */
+.response{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .response h2{
+    color: rgb(228, 41, 24);
+} */
+.response div{
+    width: 100px;
+    height: 100px;
+}
+.response div img{
+    width: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
