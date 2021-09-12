@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Banking System | Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <style><?php include ("css/style.css") ?></style>
 </head>
 <body>
     <?php include("header.php") ?>
@@ -14,8 +15,10 @@
         <div class="left">
             <h1>Your <span>Perfect</span> Banking <span>Partner</span>.</h1>
             <p>A simpler banking experience for a simpler life.</p>
-            <button><a href="customers.php">View Customers &boxbox;</a></button>
-            <button><a href="transactions.php">Transactions &UpArrowDownArrow;</a></button>
+            <div class="buttons">
+                <button><a href="customers.php">View Customers &boxbox;</a></button>
+                <button><a href="transactions.php">Transactions &UpArrowDownArrow;</a></button>
+            </div>
         </div>
 
         <div class="right">

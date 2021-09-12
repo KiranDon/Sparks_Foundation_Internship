@@ -78,11 +78,12 @@ footer a{
     font-size: 50px;
     margin-bottom: 20px;
 }
-.main .left h1 span{
+span{
     /* background: linear-gradient(45deg, #B1E48D, #78C9A4); */
+    font-size: 50px;
     position: relative;
 }
-.main .left h1 span::after{
+span::after{
     content: '';
     position: absolute;
     background: linear-gradient(45deg, #B1E48D, #78C9A4);
@@ -148,7 +149,7 @@ tr:hover{
     text-align: center;
     margin: 5px 0;
 }
-span{
+.s{
     font-size: 15px;
 }
 
@@ -256,5 +257,51 @@ span{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@media (max-width: 850px){
+    nav{
+        padding: 20px 10px;
+    }
+    .main .right{
+        display: none;
+    }
+    .main .left{
+        width: 100%;
+    }
+    .customers{
+        width: 90%;
+        padding: 10px 0;
+    }
+    .main .left button{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 650px){
+    .main .left h1, span{
+        font-size: 40px;
+    }
+    .main .left h1 span::after{
+        width: 140px;
+        height: 50px;
+    }
+    .main .buttons{
+        text-align: center;
+    }
+    .customers{
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 550px){
+    .main{
+        padding: 100px 15px;
+    }
+    .main .left h1, span{
+        font-size: 30px;
+    }
+    .main .left h1 span::after{
+        width: 105px;
+        height: 35px;
     }
 }

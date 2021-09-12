@@ -13,7 +13,7 @@
 <body>
     <?php include("header.php") ?>
 
-    <h2 class="center">Recent Transactions<span>(Scroll down &downarrow;)</span></h2>
+    <h2 class="center">Recent Transactions<p class="s">(Scroll down &downarrow;)</p></h2>
     <div class="customers">
         <table>
             <tr>
